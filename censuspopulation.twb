@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <CascadingFilters />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='censuspopulation' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='acs2015-county-data (1)' inline='true' name='federated.19uhzph1vdeb1q10pifsu0mhse66' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='acs2015-county-data (1)' name='textscan.1x7numq0slsbs413ovz5i1gkx894'>
+            <connection class='textscan' directory='C:/Users/home/Downloads' filename='acs2015-county-data (1).csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1x7numq0slsbs413ovz5i1gkx894' name='acs2015-county-data (1).csv' table='[acs2015-county-data (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CensusId' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='string' name='County' ordinal='2' />
+            <column datatype='integer' name='TotalPop' ordinal='3' />
+            <column datatype='integer' name='Men' ordinal='4' />
+            <column datatype='integer' name='Women' ordinal='5' />
+            <column datatype='real' name='Hispanic' ordinal='6' />
+            <column datatype='real' name='White' ordinal='7' />
+            <column datatype='real' name='Black' ordinal='8' />
+            <column datatype='real' name='Native' ordinal='9' />
+            <column datatype='real' name='Asian' ordinal='10' />
+            <column datatype='real' name='Pacific' ordinal='11' />
+            <column datatype='integer' name='Citizen' ordinal='12' />
+            <column datatype='real' name='Income' ordinal='13' />
+            <column datatype='real' name='IncomeErr' ordinal='14' />
+            <column datatype='integer' name='IncomePerCap' ordinal='15' />
+            <column datatype='integer' name='IncomePerCapErr' ordinal='16' />
+            <column datatype='real' name='Poverty' ordinal='17' />
+            <column datatype='real' name='ChildPoverty' ordinal='18' />
+            <column datatype='real' name='Professional' ordinal='19' />
+            <column datatype='real' name='Service' ordinal='20' />
+            <column datatype='real' name='Office' ordinal='21' />
+            <column datatype='real' name='Construction' ordinal='22' />
+            <column datatype='real' name='Production' ordinal='23' />
+            <column datatype='real' name='Drive' ordinal='24' />
+            <column datatype='real' name='Carpool' ordinal='25' />
+            <column datatype='real' name='Transit' ordinal='26' />
+            <column datatype='real' name='Walk' ordinal='27' />
+            <column datatype='real' name='OtherTransp' ordinal='28' />
+            <column datatype='real' name='WorkAtHome' ordinal='29' />
+            <column datatype='real' name='MeanCommute' ordinal='30' />
+            <column datatype='integer' name='Employed' ordinal='31' />
+            <column datatype='real' name='PrivateWork' ordinal='32' />
+            <column datatype='real' name='PublicWork' ordinal='33' />
+            <column datatype='real' name='SelfEmployed' ordinal='34' />
+            <column datatype='real' name='FamilyWork' ordinal='35' />
+            <column datatype='real' name='Unemployment' ordinal='36' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CensusId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CensusId]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>CensusId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPop]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>TotalPop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Men</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Men]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Men</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Women</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Women]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Women</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hispanic</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hispanic]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Hispanic</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>White</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[White]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>White</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Black</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Black]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Black</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Native</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Native]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Native</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asian</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Asian]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Asian</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pacific</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pacific]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Pacific</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Citizen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Citizen]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Citizen</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeErr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IncomeErr]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>IncomeErr</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomePerCap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IncomePerCap]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>IncomePerCap</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomePerCapErr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IncomePerCapErr]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>IncomePerCapErr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Poverty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Poverty]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Poverty</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ChildPoverty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ChildPoverty]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>ChildPoverty</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Professional</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Professional]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Professional</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Service]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Service</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Office</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Office]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Office</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Construction</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Construction]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Construction</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Production</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Production]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Production</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drive</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Drive]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Drive</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carpool</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Carpool]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Carpool</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Transit]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Transit</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Walk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Walk]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Walk</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OtherTransp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OtherTransp]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>OtherTransp</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WorkAtHome</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WorkAtHome]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>WorkAtHome</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MeanCommute</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MeanCommute]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>MeanCommute</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employed]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Employed</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrivateWork</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PrivateWork]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>PrivateWork</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PublicWork</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PublicWork]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>PublicWork</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SelfEmployed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SelfEmployed]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>SelfEmployed</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FamilyWork</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FamilyWork]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>FamilyWork</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployment]</local-name>
+            <parent-name>[acs2015-county-data (1).csv]</parent-name>
+            <remote-alias>Unemployment</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Asian]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Black]' role='measure' type='quantitative' />
+      <column caption='Employement Ratio' datatype='real' name='[Calculation_715509432188026882]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Employed]/[TotalPop]' />
+      </column>
+      <column caption='Census Id' datatype='integer' name='[CensusId]' role='dimension' type='ordinal' />
+      <column caption='Child Poverty' datatype='real' name='[ChildPoverty]' role='measure' type='quantitative' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Family Work' datatype='real' name='[FamilyWork]' role='measure' type='quantitative' />
+      <column caption='Income Err' datatype='real' name='[IncomeErr]' role='measure' type='quantitative' />
+      <column caption='Income Per Cap Err' datatype='integer' name='[IncomePerCapErr]' role='measure' type='quantitative' />
+      <column caption='Income Per Cap' datatype='integer' name='[IncomePerCap]' role='measure' type='quantitative' />
+      <column caption='Mean Commute' datatype='real' name='[MeanCommute]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Men]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Other Transp' datatype='real' name='[OtherTransp]' role='measure' type='quantitative' />
+      <column caption='Private Work' datatype='real' name='[PrivateWork]' role='measure' type='quantitative' />
+      <column caption='Public Work' datatype='real' name='[PublicWork]' role='measure' type='quantitative' />
+      <column caption='Self Employed' datatype='real' name='[SelfEmployed]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Pop' datatype='integer' name='[TotalPop]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Women]' role='measure' type='quantitative' />
+      <column caption='Work At Home' datatype='real' name='[WorkAtHome]' role='measure' type='quantitative' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Asian]' derivation='Sum' name='[sum:Asian:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Black]' derivation='Sum' name='[sum:Black:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Men]' derivation='Sum' name='[sum:Men:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Women]' derivation='Sum' name='[sum:Women:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='State, County'>
+          <field>[State]</field>
+          <field>[County]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/home/Documents/My Tableau Repository/Datasources/acs2015-county-data (1).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/17/2020 05:00:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='acs2015-county-data (1)' increment-value='%null%' refresh-type='create' rows-inserted='3220' timestamp-start='2020-04-17 17:00:17.806' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CensusId</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CensusId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CensusId</remote-alias>
+              <ordinal>0</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3220</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>1</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>2</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1328</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalPop</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalPop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalPop</remote-alias>
+              <ordinal>3</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2885</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Men</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Men]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Men</remote-alias>
+              <ordinal>4</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2461</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Women</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Women]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Women</remote-alias>
+              <ordinal>5</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2382</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hispanic</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Hispanic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hispanic</remote-alias>
+              <ordinal>6</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>385</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>White</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[White]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>White</remote-alias>
+              <ordinal>7</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>633</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Black</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Black]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Black</remote-alias>
+              <ordinal>8</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Native</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Native]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Native</remote-alias>
+              <ordinal>9</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Asian</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Asian]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Asian</remote-alias>
+              <ordinal>10</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pacific</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pacific]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pacific</remote-alias>
+              <ordinal>11</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Citizen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Citizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Citizen</remote-alias>
+              <ordinal>12</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2800</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>13</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2334</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IncomeErr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IncomeErr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IncomeErr</remote-alias>
+              <ordinal>14</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1640</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IncomePerCap</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IncomePerCap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IncomePerCap</remote-alias>
+              <ordinal>15</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2109</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IncomePerCapErr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IncomePerCapErr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IncomePerCapErr</remote-alias>
+              <ordinal>16</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1340</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Poverty</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Poverty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Poverty</remote-alias>
+              <ordinal>17</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>363</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ChildPoverty</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ChildPoverty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ChildPoverty</remote-alias>
+              <ordinal>18</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>500</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Professional</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Professional]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Professional</remote-alias>
+              <ordinal>19</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>318</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Service</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Service</remote-alias>
+              <ordinal>20</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>201</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Office</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Office]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Office</remote-alias>
+              <ordinal>21</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>181</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Construction</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Construction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Construction</remote-alias>
+              <ordinal>22</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>232</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Production</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Production</remote-alias>
+              <ordinal>23</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>283</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drive</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Drive]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drive</remote-alias>
+              <ordinal>24</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>308</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Carpool</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Carpool]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Carpool</remote-alias>
+              <ordinal>25</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Transit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transit</remote-alias>
+              <ordinal>26</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Walk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Walk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Walk</remote-alias>
+              <ordinal>27</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OtherTransp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[OtherTransp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OtherTransp</remote-alias>
+              <ordinal>28</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WorkAtHome</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[WorkAtHome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WorkAtHome</remote-alias>
+              <ordinal>29</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>157</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MeanCommute</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MeanCommute]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MeanCommute</remote-alias>
+              <ordinal>30</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Employed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employed</remote-alias>
+              <ordinal>31</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2266</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PrivateWork</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PrivateWork]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PrivateWork</remote-alias>
+              <ordinal>32</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>347</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PublicWork</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PublicWork]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PublicWork</remote-alias>
+              <ordinal>33</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SelfEmployed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SelfEmployed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SelfEmployed</remote-alias>
+              <ordinal>34</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FamilyWork</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FamilyWork]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FamilyWork</remote-alias>
+              <ordinal>35</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unemployment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployment</remote-alias>
+              <ordinal>36</ordinal>
+              <family>acs2015-county-data (1).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>218</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.135659' measure-ordering='alphabetic' measure-percentage='0.864341' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Men:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Black:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Asian:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Women:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total population among states in US</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='acs2015-county-data (1)' name='federated.19uhzph1vdeb1q10pifsu0mhse66' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19uhzph1vdeb1q10pifsu0mhse66'>
+            <column datatype='integer' name='[Employed]' role='measure' type='quantitative' />
+            <column caption='Private Work' datatype='real' name='[PrivateWork]' role='measure' type='quantitative' />
+            <column caption='Public Work' datatype='real' name='[PublicWork]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Employed]' derivation='Sum' name='[sum:Employed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PrivateWork]' derivation='Sum' name='[sum:PrivateWork:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PublicWork]' derivation='Sum' name='[sum:PublicWork:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]'>
+            <groupfilter from='&quot;Alabama&quot;' function='range' level='[none:State:nk]' to='&quot;Wyoming&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Employed:qk]' />
+              <color column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Employed:qk]' />
+              <text column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]' />
+              <lod column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:PrivateWork:qk]' />
+              <lod column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:PublicWork:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C2B6B6C9-A910-4D37-96B0-9E6729E014F3}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='acs2015-county-data (1)' name='federated.19uhzph1vdeb1q10pifsu0mhse66' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19uhzph1vdeb1q10pifsu0mhse66'>
+            <column datatype='integer' name='[Men]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Total Pop' datatype='integer' name='[TotalPop]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Women]' role='measure' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Men]' derivation='Sum' name='[sum:Men:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TotalPop]' derivation='Sum' name='[sum:TotalPop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Women]' derivation='Sum' name='[sum:Women:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]'>
+            <groupfilter from='&quot;Alabama&quot;' function='range' level='[none:State:nk]' to='&quot;Wyoming&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:TotalPop:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Men:qk]' />
+              <lod column='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Women:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:TotalPop:qk]</rows>
+        <cols>[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{49F5C0E6-1ECB-492C-8347-11C2E3B36A2F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Employed:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19uhzph1vdeb1q10pifsu0mhse66].[:Measure Names]</field>
+            <field>[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]</field>
+            <field>[federated.19uhzph1vdeb1q10pifsu0mhse66].[sum:Women:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E251B7B7-0B72-4769-B17B-D02E4BF8039C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]' type='filter' values='cascading' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.19uhzph1vdeb1q10pifsu0mhse66].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CF83D21F-66AE-4BF2-AF92-8E6FB7341EBC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      MegHNgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
