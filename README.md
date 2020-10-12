@@ -11,3 +11,9 @@ LINK:  https://public.tableau.com/profile/ar3091#!/vizhome/censuspopulation/Shee
 Summary: This chart shows the information about population in states of US and also detailed information about No. of men and women in the states. We can see that California is the most populated state in US with nearly 38 million people, and least populated state is Wyoming with 579,679K people.
 Design: Creating a Bar chart allowed me to compare Categorical (state) variable with Quantitative variable (Total Pop). I have chosen color blind palette so it’s easy to interpret the visual.
 Resources: N/A
+
+
+Avg income in different states of US
+Link    https://public.tableau.com/profile/ar3091#!/vizhome/censusincome/Sheet1?publish=yes
+Summary:  This map shows information about average income in states of US. From this map we can see that New Jersey State has largest Avg income of about 73K, Mississippi has the lowest Avg income of 34K.
+Design: Geographical Data can be best displayed using Map. In the following map I have placed income measure on color of Marks pane so that higher the avg income, darker the state.
